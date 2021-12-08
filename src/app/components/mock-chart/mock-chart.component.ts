@@ -19,7 +19,8 @@ export class MockChartComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void{
 
-    const chartpath: string = `../../../assets/charts/${this.dataset}_${this.perturbation}_${this.metric}.png`
+    const chartpath: string = `assets/charts/${this.dataset}_${this.perturbation}_${this.metric}.png`
+    // const chartpath: string = `../../../assets/charts/${this.dataset}_${this.perturbation}_${this.metric}.png`
     this.chartsource = chartpath;
   
   }
